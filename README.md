@@ -10,4 +10,4 @@ to see it in action!
 
 You can find the accompanying blog post [here][1]
 
-[1]: https://www.google.com
+[1]: https://jtcwang.me/scala-monad-transformers-by-example
