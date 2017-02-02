@@ -60,7 +60,7 @@ object Main {
     val transformer = for {
       user <- EitherT(remote_getUser(userId))
       address <- EitherT(remote_getAddress(user))
-      mobileNumber <- EitherT(remote_getAddress(user))
+      mobileNumber <- EitherT(remote_getMobileNumber(user))
     } yield Parcel(user.name, address, mobileNumber)
     transformer.run
   }
